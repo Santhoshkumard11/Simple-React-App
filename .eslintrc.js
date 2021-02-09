@@ -1,16 +1,21 @@
 module.exports = {
+  parser: "babel-eslint",
   env: {
+    es6: true,
+    node: true,
     browser: true,
-    es2020: true,
   },
-  extends: ["eslint:recommended", "plugin:react/recommended"],
   parserOptions: {
+    ecmaVersion: 6,
+    sourceType: "module",
     ecmaFeatures: {
       jsx: true,
     },
-    ecmaVersion: 11,
-    sourceType: "module",
   },
   plugins: ["react"],
-  rules: {},
+  extends: [
+    "eslint:recommended",
+    "plugin:react/recommended",
+    "plugin:prettier/recommended",
+  ],
 };
