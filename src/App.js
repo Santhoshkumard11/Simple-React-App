@@ -1,9 +1,13 @@
-import logo from './logo.svg';
-import './App.css';
+/* eslint-disable react/react-in-jsx-scope */
+import logo from "./logo.svg";
+import "./App.css";
+
+import Home from "views/Home/Home";
 
 function App() {
   return (
     <div className="App">
+      <Home />
       <header className="App-header">
         <img src={logo} className="App-logo" alt="logo" />
         <p>
