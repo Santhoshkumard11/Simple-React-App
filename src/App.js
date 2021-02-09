@@ -9,18 +9,16 @@ import Contact from "views/Home/Contact";
 
 import CalculateScore from 'Components/CalculateScore'
 
+import OnlineShopping from 'views/OnlineShopping/OnlineShopping';
+
 function App() {
   return (
     <div className="App">
       <Home titleText={"Home"} />
-      <Home titleText={"About"} />
-      <Home titleText={"Contact"} />
-
-      <CalculateScore Name={"Steeve"}
-        School={"DNV Public School"}
-        total={235} goal={3}/>
-
+      <OnlineShopping />
     </div>
+
+
   );
 }
 
