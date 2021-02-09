@@ -9,9 +9,9 @@ import Contact from "views/Home/Contact";
 function App() {
   return (
     <div className="App">
-      <Home />
-      <About />
-      <Contact />
+      <Home titleText={"Home"} />
+      <Home titleText={"About"} />
+      <Home titleText={"Contact"} />
     </div>
   );
 }
