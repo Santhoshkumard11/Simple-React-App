@@ -10,12 +10,14 @@ import Contact from "views/Home/Contact";
 import CalculateScore from 'Components/CalculateScore'
 
 import OnlineShopping from 'views/OnlineShopping/OnlineShopping';
+import CounterApp from 'views/CounterApp/CounterApp'
+
 
 function App() {
   return (
     <div className="App">
       <Home titleText={"Home"} />
-      <OnlineShopping />
+      <CounterApp />
     </div>
 
 
