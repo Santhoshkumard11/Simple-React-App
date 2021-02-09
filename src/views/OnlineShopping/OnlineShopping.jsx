@@ -17,8 +17,12 @@ export default class OnlineShopping extends Component {
     return (
       <div>
         <h1>Items Ordered:</h1>
-        <Cart items={itemList} />
+        <Cart items={itemList}/>
       </div>
     );
   }
+}
+
+Cart.defaultProps = {
+  items: [{name: "No items in cart", price:0}]
 }
