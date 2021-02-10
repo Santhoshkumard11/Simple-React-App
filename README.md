@@ -7,6 +7,8 @@
 + Cricket App
 + Office Space
 + Currency Convertor
++ Ticket Booking
++ Blogger Page
 
 ## using Material UI for all the components
 
