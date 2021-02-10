@@ -13,16 +13,15 @@ import OnlineShopping from "views/OnlineShopping/OnlineShopping";
 import CounterApp from "views/CounterApp/CounterApp";
 import CricketApp from "views/CricketApp/CricketApp";
 import OfficeSpace from "views/OfficeSpace/OfficeSpace";
+import CurrencyConvertor from "views/CurrencyConvertor/CurrencyConvertor";
 
 const officeSpace = { name: "DBS", rent: 60000, address: "Chennai" };
 
 function App() {
   return (
     <div className="App">
-      <Home titleText={"Home"} />
-      <OfficeSpace officeSpace={officeSpace} />
+      <CurrencyConvertor />
     </div>
   );
 }
-
 export default App;
