@@ -7,20 +7,21 @@ import Home from "views/Home/Home";
 import About from "views/Home/About";
 import Contact from "views/Home/Contact";
 
-import CalculateScore from 'Components/CalculateScore'
+import CalculateScore from "Components/CalculateScore";
 
-import OnlineShopping from 'views/OnlineShopping/OnlineShopping';
-import CounterApp from 'views/CounterApp/CounterApp'
+import OnlineShopping from "views/OnlineShopping/OnlineShopping";
+import CounterApp from "views/CounterApp/CounterApp";
 import CricketApp from "views/CricketApp/CricketApp";
+import OfficeSpace from "views/OfficeSpace/OfficeSpace";
+
+const officeSpace = { name: "DBS", rent: 60000, address: "Chennai" };
 
 function App() {
   return (
     <div className="App">
       <Home titleText={"Home"} />
-      <CricketApp flag="false"/>
+      <OfficeSpace officeSpace={officeSpace} />
     </div>
-
-
   );
 }
 
