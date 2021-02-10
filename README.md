@@ -10,4 +10,4 @@
 
 ## Currency Convertor
 
-![screenshot](/images/currency.JPG)
+![screenshot](/Images/currency.JPG)
