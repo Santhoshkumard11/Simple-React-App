@@ -14,13 +14,14 @@ import CounterApp from "views/CounterApp/CounterApp";
 import CricketApp from "views/CricketApp/CricketApp";
 import OfficeSpace from "views/OfficeSpace/OfficeSpace";
 import CurrencyConvertor from "views/CurrencyConvertor/CurrencyConvertor";
+import Greetings from "views/TicketBooking/Greetings";
 
 const officeSpace = { name: "DBS", rent: 60000, address: "Chennai" };
 
 function App() {
   return (
     <div className="App">
-      <CurrencyConvertor />
+      <Greetings />
     </div>
   );
 }
