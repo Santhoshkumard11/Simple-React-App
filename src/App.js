@@ -11,13 +11,13 @@ import CalculateScore from 'Components/CalculateScore'
 
 import OnlineShopping from 'views/OnlineShopping/OnlineShopping';
 import CounterApp from 'views/CounterApp/CounterApp'
-
+import CricketApp from "views/CricketApp/CricketApp";
 
 function App() {
   return (
     <div className="App">
       <Home titleText={"Home"} />
-      <CounterApp />
+      <CricketApp flag="false"/>
     </div>
 
 
