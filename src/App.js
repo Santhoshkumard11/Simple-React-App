@@ -16,6 +16,7 @@ import OfficeSpace from "views/OfficeSpace/OfficeSpace";
 import CurrencyConvertor from "views/CurrencyConvertor/CurrencyConvertor";
 import Greetings from "views/TicketBooking/Greetings";
 import BloggerHome from "views/BloggerApp/Home";
+import ComplaintRegister from "views/TicketRaisingApp/ComplaintRegister";
 
 const officeSpaceList = [
   { name: "DBS", rent: 40000, address: "Chennai" },
@@ -27,7 +28,7 @@ const officeSpaceList = [
 function App() {
   return (
     <div className="App">
-      <OfficeSpace officeSpaceList={officeSpaceList} />
+      <ComplaintRegister />
     </div>
   );
 }
