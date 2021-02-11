@@ -17,12 +17,17 @@ import CurrencyConvertor from "views/CurrencyConvertor/CurrencyConvertor";
 import Greetings from "views/TicketBooking/Greetings";
 import BloggerHome from "views/BloggerApp/Home";
 
-const officeSpace = { name: "DBS", rent: 60000, address: "Chennai" };
+const officeSpaceList = [
+  { name: "DBS", rent: 40000, address: "Chennai" },
+  { name: "SKD", rent: 90000, address: "Bangalore" },
+  { name: "GBS", rent: 20000, address: "Kolkata" },
+  { name: "SED", rent: 100000, address: "Pune" },
+];
 
 function App() {
   return (
     <div className="App">
-      <BloggerHome />
+      <OfficeSpace officeSpaceList={officeSpaceList} />
     </div>
   );
 }
