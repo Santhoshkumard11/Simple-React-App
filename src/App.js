@@ -17,6 +17,7 @@ import CurrencyConvertor from "views/CurrencyConvertor/CurrencyConvertor";
 import Greetings from "views/TicketBooking/Greetings";
 import BloggerHome from "views/BloggerApp/Home";
 import ComplaintRegister from "views/TicketRaisingApp/ComplaintRegister";
+import MailRegister from 'views/MailRegisterApp/Register'
 
 const officeSpaceList = [
   { name: "DBS", rent: 40000, address: "Chennai" },
@@ -28,7 +29,7 @@ const officeSpaceList = [
 function App() {
   return (
     <div className="App">
-      <ComplaintRegister />
+      <MailRegister />
     </div>
   );
 }

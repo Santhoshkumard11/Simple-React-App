@@ -10,12 +10,12 @@
 + Ticket Booking
 + Blogger Page
 + Complaint Register
++ Mail Register
 ## using Material UI for all the components
 
 ## Currency Convertor
 
 ![screenshot](/Images/currency.JPG)
-
 
 ## Office Space
 
@@ -24,3 +24,7 @@
 ## Complaint Register
 
 ![screenshot](/Images/complaint_register.JPG)
+
+## Mail Register
+
+![screenshot](/Images/mail_register.JPG)
