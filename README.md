@@ -50,8 +50,12 @@
 + Office Space
 + Currency Convertor
 + Ticket Booking
+    - 
 + Blogger Page
+    - list with grid
+    - assigning html to constants
 + Complaint Register
+    - basic form submission with a alert message
 + Mail Register
     - different approach to handling state in function (encapsulation)
     - custom styles in function
