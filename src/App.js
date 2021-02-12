@@ -30,7 +30,7 @@ const officeSpaceList = [
 function App() {
   return (
     <div className="App">
-      <MailRegister />
+      <EmployeeForm />
     </div>
   );
 }

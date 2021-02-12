@@ -1,43 +1,95 @@
 import React, { Component } from "react";
 import PropTypes from "prop-types";
-import { Button, FormControl, Grid, TextField,withStyles } from "@material-ui/core";
+import {
+  Button,
+  FormControl,
+  Grid,
+  TextField,
+  withStyles,
+} from "@material-ui/core";
+import validator from "validator";
+import { TagFacesTwoTone } from "@material-ui/icons";
 
 const styles = (theme) => ({
-  
-    
-
+  root: {
+    "& *": {
+      margin: theme.spacing(1),
+    },
+  },
 });
+
+const style = {
+    bg: {
+        backgroundColor: "white"
+    }
+}
 
 class EmployeeForm extends Component {
   constructor(props) {
     super(props);
-      this.state = { entities: {}, validation:{}};
+    this.state = {
+      entities: { email: "", password: "" },
+      validation: { emailValid: true },
+    };
   }
 
-    onChange(e) {
-      
-        let target = e.target;
-        let entities = this.state.entities;
+  handleChange = (e) => {
+    let target = e.target;
+    let name = target.name;
+    let entities = this.state.entities;
 
-        entities[target.name] = target.value;
+    entities[name] = target.value;
 
-        this.setState(entities);
-  }
+    if (name == "email") {
+      this.validateEmail();
+    }
 
-    render() {
-      const { classes } = this.props;
+      this.setState({entities });
+  };
+  validateEmail = () => {
+      let valid = false;
+      let validation = this.state.validation;
+    if (validator.isEmail(this.state.entities.email)) {
+      valid = true;
+      }
+      validation["emailValid"] = valid; 
+      this.setState({ validation: validation});
+  };
+
+  render() {
+    const { classes } = this.props;
     return (
       <React.Fragment>
         <h2 className="App-header">Register here!!</h2>
-        <Grid item xs={12} spacing={3} direction="row" justify="center">
+        <Grid
+          container
+          spacing={3}
+          justify="center"
+          className={classes.root}
+          style={style.bg}
+        >
           <Grid item>
             <FormControl>
-              <TextField value={this.state.email} label="Email" />
-              <TextField value={this.state.password} label="Password" />
+              <TextField
+                value={this.state.entities.email}
+                label="Email"
+                name="email"
+                onChange={(e) => this.handleChange(e)}
+                helperText={
+                  this.state.validation.emailValid ? "" : "Invalid email id"
+                }
+                error={this.state.validation.emailValid == false && true}
+              />
+              <TextField
+                value={this.state.entities.password}
+                label="Password"
+                name="password"
+                onChange={this.handleChange}
+              />
               <Button
                 variant="contained"
                 color="primary"
-                style={{ marginTop: "7%",marginInline:"auto" }}
+                style={{ marginTop: "7%", marginInline: "auto", backgroundColor: "green" }}
               >
                 Register
               </Button>

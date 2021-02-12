@@ -11,6 +11,7 @@
 + Blogger Page
 + Complaint Register
 + Mail Register
++ Employee Register
 ## using Material UI for all the components
 
 ## Currency Convertor
@@ -32,3 +33,22 @@
 ## Mail Register - Errors
 
 ![screenshot](/Images/mail_register_2.JPG)
+
+
+### Implementations
++ Basic Home Page
++ Counter App
++ Online Shopping
++ Cricket App
++ Office Space
++ Currency Convertor
++ Ticket Booking
++ Blogger Page
++ Complaint Register
++ Mail Register
++ Employee Register
+    - class with styles 
+    - even handling with this and e parameters
+    - validator module for email validation
+    - using styles in classes  2 ways
+    - changing button color with ease
