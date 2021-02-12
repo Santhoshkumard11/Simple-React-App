@@ -20,6 +20,7 @@ import ComplaintRegister from "views/TicketRaisingApp/ComplaintRegister";
 import MailRegister from 'views/MailRegisterApp/Register'
 import EmployeeForm from "views/EmployeeForm/EmployeeForm";
 import FetchUser from "views/FetchUserApp/FetchUser";
+import CaseFetchUser from "views/CaseStudy_FetchUser/FetchUser";
 
 const officeSpaceList = [
   { name: "DBS", rent: 40000, address: "Chennai" },
@@ -32,6 +33,7 @@ function App() {
   return (
     <div className="App">
       <FetchUser />
+      <CaseFetchUser />
     </div>
   );
 }

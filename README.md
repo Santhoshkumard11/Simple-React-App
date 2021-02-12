@@ -1,6 +1,6 @@
 # Simple React Snippets/Projects
 
-## List of projects
+## List of Apps
 + Basic Home Page
 + Counter App
 + Online Shopping
@@ -12,7 +12,7 @@
 + Complaint Register
 + Mail Register
 + Employee Register
-+ Fetch User
++ Fetch User API
 ## using Material UI for all the components
 
 ## Fetch User
@@ -38,6 +38,9 @@
 
 ![screenshot](/Images/mail_register_2.JPG)
 
+## Fetch User
+![screenshot](/Images/fetch_user_2.JPG)
+
 
 ### Implementations
 + Basic Home Page
@@ -50,6 +53,10 @@
 + Blogger Page
 + Complaint Register
 + Mail Register
+    - different approach to handling state in function (encapsulation)
+    - custom styles in function
+    - email and password validation and error messages
+    - dialog box after submission
 + Employee Register
     - class with styles 
     - even handling with this and e parameters
@@ -58,3 +65,6 @@
     - changing button color with ease
 + Fetch User
     - fetch use details from api using fetch()
++ Case Study Fetch User
+    - axion for fetching the data
+    - using map to list person

@@ -7,17 +7,20 @@ export default class FetchUser extends Component {
     this.state = { person: {}, loading: true };
   }
 
-  async componentDidMount() {
-    const url = "https://api.randomuser.me";
-    const response = await fetch(url);
-    const data = await response.json();
-    let person = data.results[0];
-    console.log(person);
+  getUsers() {
+    fetch("https://api.randomuser.me")
+      .then((response) => response.json())
+      .then((data) => {
+        console.log(data.results[0]);
+        this.setState({ person: data.results[0], loading: false });
+      });
+  }
 
-    this.setState({ person: person, loading: false });
+  async componentDidMount() {
+    this.getUsers();
   }
   handleFindAnother = () => {
-      document.location.reload();
+    this.getUsers();
   };
   render() {
     return (
