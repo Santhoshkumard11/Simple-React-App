@@ -44,13 +44,20 @@
 
 ### Implementations
 + Basic Home Page
+    - Basic components rendering with passing props to change title
 + Counter App
+    - handle methods in class with grid and buttons
 + Online Shopping
+    - const list with prop types for components
 + Cricket App
+    - conditionals inside map function and utils constants export. Several components
 + Office Space
+    - conditional rendering for className and map implementation
 + Currency Convertor
+    - implementation of parent child with passing functions in props 
+    - icon buttons and function methods for handling events
 + Ticket Booking
-    - 
+    - conditional rendering in function
 + Blogger Page
     - list with grid
     - assigning html to constants
