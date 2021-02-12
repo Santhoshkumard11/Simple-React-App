@@ -18,6 +18,7 @@ import Greetings from "views/TicketBooking/Greetings";
 import BloggerHome from "views/BloggerApp/Home";
 import ComplaintRegister from "views/TicketRaisingApp/ComplaintRegister";
 import MailRegister from 'views/MailRegisterApp/Register'
+import EmployeeForm from "views/EmployeeForm/EmployeeForm";
 
 const officeSpaceList = [
   { name: "DBS", rent: 40000, address: "Chennai" },

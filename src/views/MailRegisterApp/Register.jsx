@@ -53,11 +53,11 @@ export default function MailRegister(props) {
   });
 
   const handleChange = (prop) => (event) => {
-    let passwordValid = true;
-    let emailValid = true;
-    let nameValid = true;
+    let passwordValid = form.passwordValid;
+    let emailValid = form.emailValid;
+    let nameValid = form.nameValid;
     let submitDialogOpen = false;
-    const emailRegx = RegExp(/^[a-zA-Z0-9]+@[a-zA-Z0-9]+.[A-Za-z]+$/);
+    const emailRegx = new RegExp(/^[a-zA-Z0-9]+@[a-zA-Z0-9]+.[A-Za-z]+$/);
 
     switch (prop) {
       case "password": {
@@ -126,7 +126,7 @@ export default function MailRegister(props) {
             error={form.nameValid == false ? true : false}
             helperText={
               form.nameValid == false
-                ? "name should be greater then 5 char"
+                ? "name should be greater than 5 char"
                 : ""
             }
             InputProps={{

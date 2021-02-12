@@ -28,3 +28,7 @@
 ## Mail Register
 
 ![screenshot](/Images/mail_register.JPG)
+
+## Mail Register - Errors
+
+![screenshot](/Images/mail_register_2.JPG)
