@@ -12,7 +12,11 @@
 + Complaint Register
 + Mail Register
 + Employee Register
++ Fetch User
 ## using Material UI for all the components
+
+## Fetch User
+![screenshot](/Images/fetch_user.JPG)
 
 ## Currency Convertor
 
@@ -52,3 +56,5 @@
     - validator module for email validation
     - using styles in classes  2 ways
     - changing button color with ease
++ Fetch User
+    - fetch use details from api using fetch()

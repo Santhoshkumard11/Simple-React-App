@@ -19,6 +19,7 @@ import BloggerHome from "views/BloggerApp/Home";
 import ComplaintRegister from "views/TicketRaisingApp/ComplaintRegister";
 import MailRegister from 'views/MailRegisterApp/Register'
 import EmployeeForm from "views/EmployeeForm/EmployeeForm";
+import FetchUser from "views/FetchUserApp/FetchUser";
 
 const officeSpaceList = [
   { name: "DBS", rent: 40000, address: "Chennai" },
@@ -30,7 +31,7 @@ const officeSpaceList = [
 function App() {
   return (
     <div className="App">
-      <EmployeeForm />
+      <FetchUser />
     </div>
   );
 }
